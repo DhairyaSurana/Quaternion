@@ -1,0 +1,46 @@
+﻿  Quaternion.cpp
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(8,20): error C2146: syntax error: missing ';' before identifier 'getRe'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(8,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(8,29): warning C4508: 'getRe': function should return a value; 'void' return type assumed
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(9,9): error C2086: 'double Quaternion': redefinition
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(8): message : see declaration of 'Quaternion'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(9,20): error C2146: syntax error: missing ';' before identifier 'norm'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(9,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(9,28): warning C4508: 'norm': function should return a value; 'void' return type assumed
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(10,9): error C2086: 'double Quaternion': redefinition
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(8): message : see declaration of 'Quaternion'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(10,20): error C2146: syntax error: missing ';' before identifier 'getIm'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(10,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(10,34): warning C4508: 'getIm': function should return a value; 'void' return type assumed
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(12,13): error C7550: 'Quaternion::{ctor}': the qualified name in this context names a constructor, not a type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(12,24): error C2146: syntax error: missing ';' before identifier 'getIm'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(12,32): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(12,32): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(13,13): error C7550: 'Quaternion::{ctor}': the qualified name in this context names a constructor, not a type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(13,24): error C2146: syntax error: missing ';' before identifier 'conj'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(13,31): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(13,31): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(14,13): error C7550: 'Quaternion::{ctor}': the qualified name in this context names a constructor, not a type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(14,24): error C2146: syntax error: missing ';' before identifier 'getUnitVector'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(14,40): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(14,40): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(16,22): error C2833: 'operator qualified-name' is not a recognized operator or type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(16,22): error C2059: syntax error: 'newline'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(16,45): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(16,45): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(17,22): error C2833: 'operator qualified-name' is not a recognized operator or type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(17,22): error C2059: syntax error: 'newline'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(17,45): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(17,45): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(18,22): error C2833: 'operator qualified-name' is not a recognized operator or type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(18,22): error C2059: syntax error: 'newline'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(18,45): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(18,45): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(19,22): error C2833: 'operator qualified-name' is not a recognized operator or type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(19,22): error C2059: syntax error: 'newline'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(19,32): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(19,32): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(22,36): error C2833: 'operator qualified-name' is not a recognized operator or type
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(22,36): error C2059: syntax error: 'newline'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(22,81): error C2143: syntax error: missing ';' before '{'
+C:\Users\Dhairya Surana\OneDrive\College\Virginia Tech\Super-Senior\Large-Scale-Software-Dev\Homework\Quaternion\Quaternion.cpp(22,81): error C2447: '{': missing function header (old-style formal list?)
