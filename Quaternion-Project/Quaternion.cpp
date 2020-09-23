@@ -4,7 +4,7 @@
 
 
 
-Quaternion::Quaternion(int s, int i, int j, int k) {
+Quaternion::Quaternion(double s, double i, double j, double k) {
 
 	parts[0] = s;
 	parts[1] = i;
@@ -28,7 +28,11 @@ double Quaternion :: getIm(int n) {
 	
 }
 
-//Quaternion Quaternion :: getIm() {}
+Quaternion Quaternion :: getIm() {
+
+	return Quaternion(0, parts[1], parts[2], parts[3]);
+}
+
 //Quaternion Quaternion :: conj() {}
 //Quaternion Quaternion :: getUnitVector() {}
 
@@ -37,12 +41,28 @@ double Quaternion :: getIm(int n) {
 //Quaternion operator *(const Quaternion& q) {}
 //Quaternion Quaternion :: operator -() const {}
 
+bool operator ==(const Quaternion& lhs, const Quaternion& rhs) {
+
+	for (size_t i = 0; i < 4; i++) {
+		if (lhs.parts[i] != rhs.parts[i])
+			return false;
+	}
+
+	return true;
+}
+
+std::ostream& operator<<(std::ostream& os, const Quaternion& q) {
+	os << "[ " << q.parts[0] << " + " << q.parts[1] << "i + " << q.parts[2] << "j + " << q.parts[3] << "k ]";
+	return os;
+}
 
 int main() {
 
-	Quaternion q = Quaternion(1, -1, 0, 1);
+	Quaternion q1 = Quaternion(1, -1, 0, 1);
+	Quaternion q2 = Quaternion(1, -1, 0, 1);
 
-	std::cout << q.getIm(3) << std::endl;
+	if(q1 == q2)
+		std::cout << "True" << std::endl;
 	system("pause");
 
 	return 0;

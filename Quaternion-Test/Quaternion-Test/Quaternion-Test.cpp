@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../../Quaternion-Project/Quaternion.cpp"
+
 #include <string>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -33,6 +34,17 @@ namespace QuaternionTest
 			Assert::AreEqual(-DBL_MAX, q.getIm(-1));
 			Assert::AreEqual(-DBL_MAX, q.getIm(3));
 
+		}
+
+		TEST_METHOD(EqualityOperator)
+		{
+
+			Quaternion q1 = Quaternion(1, 2, 73, 4);
+			Quaternion q2 = Quaternion(1, 2, 73, 4);
+			Quaternion q3 = Quaternion(1, 2, 73, 5);
+
+			Assert::IsTrue(q1 == q2);
+			Assert::IsFalse(q1 == q3);
 		}
 	};
 }

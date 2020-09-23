@@ -10,7 +10,7 @@ private:
 public:
 
 	// Constructor
-	Quaternion(int s, int i, int j, int k);
+	Quaternion(double s, double i, double j, double k);
 
 	// Returns the real part of quaternion
 	double getRe();
@@ -39,13 +39,13 @@ public:
 	// multiplication
 	Quaternion operator *(const Quaternion& q);
 
+	// equality
+	friend bool operator ==(const Quaternion& lhs, const Quaternion& rhs);
+
 	// negation
 	Quaternion operator -() const;
 
-	friend std::ostream& operator<<(std::ostream& os, const Quaternion& q) {
-		os << "[ " << q.parts[0] << " + " << q.parts[1] << "i + " << q.parts[2] << "j + " << q.parts[3] << "k ]";
-		return os;
-	}
+	friend std::ostream& operator<<(std::ostream& os, const Quaternion& q);
 
 };
 
