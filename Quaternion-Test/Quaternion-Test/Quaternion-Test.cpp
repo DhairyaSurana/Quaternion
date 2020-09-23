@@ -46,5 +46,16 @@ namespace QuaternionTest
 			Assert::IsTrue(q1 == q2);
 			Assert::IsFalse(q1 == q3);
 		}
+
+		TEST_METHOD(NegateOperator)
+		{
+
+			Quaternion q1 = Quaternion(1, 2, 73, 4);
+			Quaternion q2 = Quaternion(0, 0, 0, 0);
+			
+
+			Assert::IsTrue(-q1 == Quaternion(-1, -2, -73, -4));
+			Assert::IsTrue(-q2 == Quaternion(0, 0, 0, 0));
+		}
 	};
 }

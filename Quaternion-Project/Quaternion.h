@@ -43,7 +43,7 @@ public:
 	friend bool operator ==(const Quaternion& lhs, const Quaternion& rhs);
 
 	// negation
-	Quaternion operator -() const;
+	friend Quaternion operator -(const Quaternion& q);
 
 	friend std::ostream& operator<<(std::ostream& os, const Quaternion& q);
 

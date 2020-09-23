@@ -39,7 +39,11 @@ Quaternion Quaternion :: getIm() {
 //Quaternion operator +(const Quaternion& q) {}
 //Quaternion operator -(const Quaternion& q) {}
 //Quaternion operator *(const Quaternion& q) {}
-//Quaternion Quaternion :: operator -() const {}
+Quaternion operator -(const Quaternion & q){
+
+	return Quaternion(-q.parts[0], -q.parts[1], -q.parts[2], -q.parts[3]);
+
+}
 
 bool operator ==(const Quaternion& lhs, const Quaternion& rhs) {
 
