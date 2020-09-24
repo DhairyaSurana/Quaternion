@@ -18,7 +18,12 @@ double Quaternion :: getRe() {
 	return parts[0];
 }
 
-//double Quaternion :: norm() {}
+double Quaternion :: norm() {
+
+	return sqrt(parts[0] * parts[0] + parts[1] * parts[1] + parts[2] * parts[2] + parts[3] * parts[3]);
+
+}
+
 double Quaternion :: getIm(int n) {
 		
 	if (n < 0 || n > 2)

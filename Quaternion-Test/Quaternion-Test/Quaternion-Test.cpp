@@ -80,6 +80,16 @@ namespace QuaternionTest
 			Assert::IsTrue(q2.conj() == Quaternion(4, 1, -2, 3));
 		}
 
+		TEST_METHOD(NormFunction) {
+
+			Quaternion q1 = Quaternion(1, 3, 4, 3);
+			Quaternion q2 = Quaternion(1, 3, -4, -3);
+
+			Assert::IsTrue(q1.norm() == sqrt(35));
+			Assert::IsTrue(q2.norm() == sqrt(35));
+
+		}
+
 	
 	};
 }
