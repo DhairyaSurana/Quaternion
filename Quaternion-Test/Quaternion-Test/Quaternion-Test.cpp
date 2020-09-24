@@ -90,6 +90,16 @@ namespace QuaternionTest
 
 		}
 
+		TEST_METHOD(UnitVectorFunction) {
+
+			Quaternion q1 = Quaternion(1, 1, 1, 1);
+
+			Assert::IsTrue(q1.getUnitVector() == Quaternion(0.5, 0.5, 0.5, 0.5));
+
+		}
+
+
+
 	
 	};
 }

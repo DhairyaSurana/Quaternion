@@ -43,7 +43,14 @@ Quaternion Quaternion :: conj() {
 	return Quaternion(parts[0], -parts[1], -parts[2], -parts[3]);
 }
 
-//Quaternion Quaternion :: getUnitVector() {}
+Quaternion Quaternion :: getUnitVector() {
+	
+	double norm = this->norm();
+	std::cout << "norm: " << norm << std::endl;
+
+	return Quaternion(parts[0] / norm, parts[1] / norm, parts[2] / norm, parts[3] / norm);
+
+}
 
 //Quaternion operator +(const Quaternion& q) {}
 //Quaternion operator -(const Quaternion& q) {}
@@ -105,10 +112,11 @@ std::ostream& operator<<(std::ostream& os, const Quaternion& q) {
 
 int main() {
 
-	Quaternion q1 = Quaternion(1, -1, 0, 1);
+	Quaternion q1 = Quaternion(1, 1, 1, 1);
 	Quaternion q2 = Quaternion(1, -1, 0, 1);
 
-	std::cout << q1 * 2.0 << std::endl;
+	std::cout << Quaternion(1, 1 / 2, 1 / 2, 1/2) << std::endl;
+	std::cout << q1.getUnitVector() << std::endl;
 	system("pause");
 
 	return 0;
