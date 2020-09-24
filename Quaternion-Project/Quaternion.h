@@ -37,7 +37,9 @@ public:
 	Quaternion operator -(const Quaternion& q);
 
 	// multiplication
-	Quaternion operator *(const Quaternion& q);
+	friend Quaternion operator *(const Quaternion& lhs, const Quaternion& rhs);
+	friend Quaternion operator *(const double& lhs, const Quaternion& rhs);
+	friend Quaternion operator *(const Quaternion& lhs, const double& rhs);
 
 	// equality
 	friend bool operator ==(const Quaternion& lhs, const Quaternion& rhs);

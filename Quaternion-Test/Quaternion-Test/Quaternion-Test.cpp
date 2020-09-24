@@ -57,5 +57,18 @@ namespace QuaternionTest
 			Assert::IsTrue(-q1 == Quaternion(-1, -2, -73, -4));
 			Assert::IsTrue(-q2 == Quaternion(0, 0, 0, 0));
 		}
+
+		TEST_METHOD(MultOperator)
+		{
+
+			Quaternion q1 = Quaternion(1, 3, 4, 3);
+			Quaternion q2 = Quaternion(4, -1, 2, -3);
+
+
+			Assert::IsTrue(q1 * q2 == Quaternion(8, -7, 24, 19));
+			Assert::IsTrue(2.0 * q1 == q1 * 2.0);
+		}
+
+	
 	};
 }
