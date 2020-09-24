@@ -33,7 +33,11 @@ Quaternion Quaternion :: getIm() {
 	return Quaternion(0, parts[1], parts[2], parts[3]);
 }
 
-//Quaternion Quaternion :: conj() {}
+Quaternion Quaternion :: conj() {
+
+	return Quaternion(parts[0], -parts[1], -parts[2], -parts[3]);
+}
+
 //Quaternion Quaternion :: getUnitVector() {}
 
 //Quaternion operator +(const Quaternion& q) {}

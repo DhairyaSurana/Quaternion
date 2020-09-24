@@ -69,6 +69,17 @@ namespace QuaternionTest
 			Assert::IsTrue(2.0 * q1 == q1 * 2.0);
 		}
 
+		TEST_METHOD(ConjFunction)
+		{
+
+			Quaternion q1 = Quaternion(1, 3, 4, 3);
+			Quaternion q2 = Quaternion(4, -1, 2, -3);
+
+
+			Assert::IsTrue(q1.conj() == Quaternion(1, -3, -4, -3));
+			Assert::IsTrue(q2.conj() == Quaternion(4, 1, -2, 3));
+		}
+
 	
 	};
 }
