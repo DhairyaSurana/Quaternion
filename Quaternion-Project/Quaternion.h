@@ -31,10 +31,10 @@ public:
 	Quaternion getUnitVector();
 
 	// addition
-	Quaternion operator +(const Quaternion& q);
+	friend Quaternion operator +(const Quaternion& lhs, const Quaternion& rhs);
 
 	// substraction
-	Quaternion operator -(const Quaternion& q);
+	friend Quaternion operator -(const Quaternion& lhs, const Quaternion& rhs);
 
 	// multiplication
 	friend Quaternion operator *(const Quaternion& lhs, const Quaternion& rhs);

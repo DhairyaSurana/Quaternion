@@ -46,14 +46,21 @@ Quaternion Quaternion :: conj() {
 Quaternion Quaternion :: getUnitVector() {
 	
 	double norm = this->norm();
-	std::cout << "norm: " << norm << std::endl;
 
 	return Quaternion(parts[0] / norm, parts[1] / norm, parts[2] / norm, parts[3] / norm);
 
 }
 
-//Quaternion operator +(const Quaternion& q) {}
-//Quaternion operator -(const Quaternion& q) {}
+Quaternion operator +(const Quaternion& lhs, const Quaternion& rhs) {
+
+	return Quaternion(lhs.parts[0] + rhs.parts[0], lhs.parts[1] + rhs.parts[1], lhs.parts[2] + rhs.parts[2], lhs.parts[3] + rhs.parts[3]);
+
+}
+
+Quaternion operator -(const Quaternion& lhs, const Quaternion& rhs) {
+
+	return Quaternion(lhs.parts[0] - rhs.parts[0], lhs.parts[1] - rhs.parts[1], lhs.parts[2] - rhs.parts[2], lhs.parts[3] - rhs.parts[3]);
+}
 
 Quaternion operator *(const Quaternion& lhs, const Quaternion& rhs) {
 

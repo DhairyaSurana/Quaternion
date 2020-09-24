@@ -98,6 +98,28 @@ namespace QuaternionTest
 
 		}
 
+		TEST_METHOD(AddOperator) {
+
+			Quaternion q1 = Quaternion(1, 3, 4, 3);
+			Quaternion q2 = Quaternion(1, 3, -4, 3);
+			Quaternion q3 = Quaternion(9, 9, 9, 9);
+
+			Assert::IsTrue(q1 + q2 == Quaternion(2, 6, 0, 6));
+			Assert::IsTrue(q1 + q3 == Quaternion(10, 12, 13, 12));
+
+		}
+
+		TEST_METHOD(SubstractOperator) {
+
+			Quaternion q1 = Quaternion(1, 3, 4, 3);
+			Quaternion q2 = Quaternion(1, 3, -4, 3);
+			Quaternion q3 = Quaternion(9, 9, 9, 9);
+
+			Assert::IsTrue(q1 - q2 == Quaternion(0, 0, 8, 0));
+			Assert::IsTrue(q1 - q3 == Quaternion(-8, -6, -5, -6));
+
+		}
+
 
 
 	
