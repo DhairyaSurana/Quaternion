@@ -1,3 +1,5 @@
+// Author: Dhairya Surana
+
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../../Quaternion-Project/Quaternion.cpp"

@@ -1,3 +1,5 @@
+// Author: Dhairya Surana
+
 #include <iostream> 
 #include <stdexcept>
 
@@ -154,8 +156,7 @@ void exerciseQ() {
 	cout << "q[0].conj() = " << q[0].conj() << ", q[1].conj() = " << q[1].conj() << ", + q[2].conj() = " << q[2].conj() << endl;
 	cout << "q[0] + q[2] = " << q[0] + q[2] << endl;
 	cout << "q[1] - q_ijk = " << q[1] - q_ijk << endl;
-	cout << "q_seq == [1, 2, 3, 4] is " <<
-		(q_seq == Quaternion(1, 2, 3, 4) ? "TRUE" : "FALSE") << endl;
+	cout << "q_seq == [1, 2, 3, 4] is " << (q_seq == Quaternion(1, 2, 3, 4) ? "TRUE" : "FALSE") << endl;
 	cout << "-q_rijk = " << -q_rijk << endl;
 	cout << "q[2] + 2.5 = " << q[2] + d << endl;
 	cout << "q_r * q_i = " << q_r * q_i << endl;
