@@ -32,6 +32,11 @@ public:
 
 	// addition
 	friend Quaternion operator +(const Quaternion& lhs, const Quaternion& rhs);
+	friend Quaternion operator +(const double& lhs, const Quaternion& rhs);
+	friend Quaternion operator +(const Quaternion& lhs, const double& rhs);
+
+	// division
+	friend Quaternion operator /(const Quaternion& lhs, const double& rhs);
 
 	// substraction
 	friend Quaternion operator -(const Quaternion& lhs, const Quaternion& rhs);

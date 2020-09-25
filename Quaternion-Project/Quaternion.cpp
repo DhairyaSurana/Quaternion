@@ -59,6 +59,25 @@ Quaternion operator +(const Quaternion& lhs, const Quaternion& rhs) {
 
 }
 
+Quaternion operator +(const double& lhs, const Quaternion& rhs) {
+
+	return Quaternion(lhs + rhs.parts[0], rhs.parts[1], rhs.parts[2], rhs.parts[3]);
+
+}
+
+Quaternion operator +(const Quaternion& lhs, const double& rhs) {
+
+	return Quaternion(rhs + lhs.parts[0], lhs.parts[1], lhs.parts[2], lhs.parts[3]);
+
+}
+
+Quaternion operator /(const Quaternion& lhs, const double& rhs) {
+
+	double quotient = (rhs == 0) ? -DBL_MAX : lhs.parts[0] / rhs;
+
+	return Quaternion(quotient, lhs.parts[1], lhs.parts[2], lhs.parts[3]);
+}
+
 Quaternion operator -(const Quaternion& lhs, const Quaternion& rhs) {
 
 	return Quaternion(lhs.parts[0] - rhs.parts[0], lhs.parts[1] - rhs.parts[1], lhs.parts[2] - rhs.parts[2], lhs.parts[3] - rhs.parts[3]);
@@ -138,14 +157,14 @@ void exerciseQ() {
 	cout << "q_seq == [1, 2, 3, 4] is " <<
 		(q_seq == Quaternion(1, 2, 3, 4) ? "TRUE" : "FALSE") << endl;
 	cout << "-q_rijk = " << -q_rijk << endl;
-	//cout << "q[2] + 2.5 = " << q[2] + d << endl;
+	cout << "q[2] + 2.5 = " << q[2] + d << endl;
 	cout << "q_r * q_i = " << q_r * q_i << endl;
 	cout << "q_i * q_j = " << q_i * q_j << endl;
 	cout << "q_k * q_j = " << q_k * q_j << endl;
 	cout << "q_ijk * q_seq = " << q_ijk * q_seq << endl;
 	cout << "q[2] * 1.5 = " << q[2] * 1.5 << endl;
 	cout << "q[2] * 2 = " << q[2] * 2 << endl;
-	//cout << "q[2] / 2.5 = " << q[2] / 2.5 << endl;
+	cout << "q[2] / 2.5 = " << q[2] / 2.5 << endl;
 	cout << "3.5 * q[2] = " << 3.5 * q[2] << endl;
 	cout << "unit vector of " << q[2] << " is " << q[2].getUnitVector() << endl;
 	cout << "norm of " << q_ijk << " is " << q_ijk.norm() << endl;

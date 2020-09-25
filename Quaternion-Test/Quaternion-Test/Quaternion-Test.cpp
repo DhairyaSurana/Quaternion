@@ -106,6 +106,7 @@ namespace QuaternionTest
 
 			Assert::IsTrue(q1 + q2 == Quaternion(2, 6, 0, 6));
 			Assert::IsTrue(q1 + q3 == Quaternion(10, 12, 13, 12));
+			Assert::IsTrue(2.0 + q1 == q1 + 2.0);
 
 		}
 
@@ -119,6 +120,17 @@ namespace QuaternionTest
 			Assert::IsTrue(q1 - q3 == Quaternion(-8, -6, -5, -6));
 
 		}
+
+		TEST_METHOD(DivOperator) {
+
+			Quaternion q1 = Quaternion(4, 0, 8, 0);
+
+			Assert::IsTrue(q1 / 2.0 == Quaternion(2, 0, 8, 0));
+			Assert::IsTrue(q1 / 0 == Quaternion(-DBL_MAX, 0, 8, 0));
+
+		}
+
+
 
 
 
